@@ -1,22 +1,21 @@
 # SoroAI
 
-A lightweight, provider-agnostic assistant interface prototype.
+A local-first assistant workspace prototype with a conversation list and a clean writing surface.
 
-## Features
-- Responsive chat workspace
-- Local conversation UI
-- Clearly labeled demo replies
-- No API keys or network calls
+## Current features
+- Create and switch between conversations.
+- Persist conversation history in the current browser using localStorage.
+- Suggested prompt chips and a responsive workspace layout.
+- Clear separation between the interface and application logic.
+
+## Stack
+HTML, CSS, Vanilla JavaScript.
 
 ## Run
-Open `index.html` in a modern browser.
+Open `index.html` through a local static web server.
 
-## Scope
-This is a frontend prototype, not a connected AI model. Add a server-side provider adapter before integrating an AI API. Never expose API secrets in browser code.
+## Important limitations
+SoroAI is not connected to an AI model yet. Assistant replies are clearly marked as local-mode placeholders. Real model access requires a PHP server endpoint, server-side API credentials, rate limiting, and appropriate privacy controls. Do not put provider secrets in browser JavaScript.
 
-## Structure
-- `index.html` — interface, styles and application logic
-- `README.md` — project documentation
-
-## License
-No license selected. All rights reserved until a license is added.
+## Roadmap
+Secure PHP API adapter, model settings, conversation search, export/import, and tests.
