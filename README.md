@@ -1,28 +1,42 @@
 # SoroAI
 
-> An extensible AI assistant platform.
+> A focused, provider-agnostic assistant interface.
 
-A modular assistant interface designed to connect to different AI providers through secure server-side adapters. The first milestone focuses on a clean chat UI, conversation state, provider abstraction, and safe configuration.
+SoroAI is a small, dependency-free chat UI prototype. It demonstrates conversation handling and a clear provider boundary without pretending that a model is connected. Add a server-side provider adapter before using real API credentials.
 
-## Technology
+## Features
 
-Vanilla JavaScript, HTML, CSS; optional PHP API layer.
+- Responsive chat layout
+- Conversation history in the current tab
+- Demo responses clearly labeled as local
+- No API keys or secrets in browser code
 
-## Roadmap
+## Tech stack
 
-- [ ] Chat interface
-- [ ] Provider adapter interface
-- [ ] Server-side secret handling
-- [ ] Conversation persistence
-- [ ] Tests and deployment guide
+HTML, CSS and vanilla JavaScript
 
-## Project status
+## Run locally
 
-Early development. Features are added incrementally and documented as they become available.
+Open `index.html` in a modern browser.
 
-## Contributing
+## Scope and limitations
 
-Issues and focused pull requests are welcome. Please describe the problem, expected behavior, and steps to reproduce bugs.
+The current build is a frontend prototype only. It does not call an AI model or send messages to a server.
+
+## Project structure
+
+```
+SoroAI/
+├── index.html   # self-contained interface and application logic
+└── README.md    # overview, setup and scope
+```
+
+## Development principles
+
+- Keep the interface accessible, responsive and dependency-light.
+- Prefer clear, readable code over unnecessary abstractions.
+- Never commit credentials, private data or generated user files.
+- Document limitations honestly and add tests as the project grows.
 
 ## License
 
